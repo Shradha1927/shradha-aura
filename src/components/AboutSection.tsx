@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Code, Palette, Rocket, Lightbulb, Cpu, Globe } from 'phosphor-react';
-import profileImage from '@/assets/profile-image.jpg';
+const profileImage = '/lovable-uploads/5b325dfc-9b91-4e85-9c32-31f5a06a6ee3.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
