@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Components
 import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
+import ExperienceSection from '@/components/ExperienceSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import FooterSection from '@/components/FooterSection';
@@ -69,6 +69,7 @@ const Portfolio = () => {
         <main className="main-content">
           <HeroSection />
           <AboutSection />
+          <ExperienceSection />
           <ProjectsSection />
           <ContactSection />
           <FooterSection />
