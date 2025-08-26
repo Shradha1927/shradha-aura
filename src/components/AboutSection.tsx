@@ -172,6 +172,26 @@ const AboutSection = () => {
                 Specializing in React, GSAP animations, and modern web technologies, 
                 I bring creativity and technical excellence to every project.
               </p>
+              
+              {/* Resume Download Button */}
+              <div className="pt-4">
+                <a 
+                  href="https://drive.google.com/file/d/1K1RNZP0_UvSrJoDj7poSfYuxidLqDxSF/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glow-button inline-flex items-center gap-3 text-base font-medium"
+                >
+                  Download Resume
+                  <svg 
+                    className="w-4 h-4 transition-transform group-hover:translate-y-[-2px]" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             {/* Skills Grid */}

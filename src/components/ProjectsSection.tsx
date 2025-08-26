@@ -18,14 +18,15 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectsSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
-  const projects = [
+const projects = [
     {
       id: 1,
       title: 'Amazon Clone',
       description: 'Full-featured e-commerce platform with shopping cart, user authentication, and payment integration.',
       image: project1,
       tech: ['React', 'Node.js', 'MongoDB'],
-      category: 'E-commerce'
+      category: 'E-commerce',
+      github: 'https://github.com/shradha/amazon-clone'
     },
     {
       id: 2,
@@ -33,7 +34,8 @@ const ProjectsSection = () => {
       description: 'Modern e-commerce site for custom phone cases with interactive product customization.',
       image: project2,
       tech: ['React', 'TypeScript', 'Tailwind'],
-      category: 'E-commerce'
+      category: 'E-commerce',
+      github: 'https://github.com/shradha/phone-case-store'
     },
     {
       id: 3,
@@ -41,7 +43,8 @@ const ProjectsSection = () => {
       description: 'Beautiful travel booking website with smooth animations and destination explorer.',
       image: project3,
       tech: ['React', 'GSAP', 'CSS3'],
-      category: 'Landing Page'
+      category: 'Landing Page',
+      github: 'https://github.com/shradha/travel-landing'
     },
     {
       id: 4,
@@ -49,7 +52,8 @@ const ProjectsSection = () => {
       description: 'Multi-vendor shopping platform with advanced filtering and search capabilities.',
       image: project4,
       tech: ['React', 'Redux', 'Express'],
-      category: 'E-commerce'
+      category: 'E-commerce',
+      github: 'https://github.com/shradha/shopping-platform'
     },
     {
       id: 5,
@@ -57,7 +61,8 @@ const ProjectsSection = () => {
       description: 'Real-time weather application with beautiful UI and location-based forecasts.',
       image: project5,
       tech: ['React', 'API', 'Chart.js'],
-      category: 'Web App'
+      category: 'Web App',
+      github: 'https://github.com/shradha/weather-app'
     },
     {
       id: 6,
@@ -65,7 +70,8 @@ const ProjectsSection = () => {
       description: 'Agricultural marketplace connecting farmers directly with consumers for fresh produce.',
       image: project6,
       tech: ['React', 'Firebase', 'Payment Gateway'],
-      category: 'Marketplace'
+      category: 'Marketplace',
+      github: 'https://github.com/shradha/kissan-market'
     },
     {
       id: 7,
@@ -73,7 +79,8 @@ const ProjectsSection = () => {
       description: 'AI-powered desktop assistant with voice commands and smart task automation.',
       image: project7,
       tech: ['Electron', 'AI/ML', 'Voice API'],
-      category: 'Desktop App'
+      category: 'Desktop App',
+      github: 'https://github.com/shradha/desktop-assistant'
     },
     {
       id: 8,
@@ -81,7 +88,8 @@ const ProjectsSection = () => {
       description: 'QR code-based ticket validation system for events with real-time verification.',
       image: project8,
       tech: ['React', 'QR Scanner', 'Database'],
-      category: 'System'
+      category: 'System',
+      github: 'https://github.com/shradha/ticket-validator'
     }
   ];
 
@@ -267,14 +275,16 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
             </span>
           </div>
           
-          {/* Action Buttons */}
-          <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <button className="p-2 bg-background/90 backdrop-blur-sm rounded-full hover:bg-background transition-colors">
-              <Globe weight="bold" className="w-4 h-4" />
-            </button>
-            <button className="p-2 bg-background/90 backdrop-blur-sm rounded-full hover:bg-background transition-colors">
+          {/* GitHub Link */}
+          <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <a 
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-background/90 backdrop-blur-sm rounded-full hover:bg-background transition-colors inline-flex items-center justify-center"
+            >
               <Code weight="bold" className="w-4 h-4" />
-            </button>
+            </a>
           </div>
         </div>
 

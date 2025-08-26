@@ -151,7 +151,7 @@ const HeroSection = () => {
           {/* Right Content - Spline 3D */}
           <div className="spline-container relative h-[600px] rounded-3xl overflow-hidden glass-card">
             <iframe 
-              src='https://my.spline.design/glassmorphlandingpage-kOTqXnRPrQQj5d4TVuDhk8rB/' 
+              src='https://my.spline.design/orb-9YtLbuOnIqk4od50FW3gwxQF/' 
               frameBorder='0' 
               width='100%' 
               height='100%'

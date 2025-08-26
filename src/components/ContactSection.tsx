@@ -232,7 +232,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <p className="text-muted-foreground">shradha.kapoor@email.com</p>
+                      <p className="text-muted-foreground">kshradha341@gmail.com</p>
                     </div>
                   </div>
                 </div>
